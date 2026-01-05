@@ -5,16 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Customer Feedback Survey</title>
     <style>
-        html, body {
+        /* 1. Body Styling: Center the survey on the screen */
+        body {
             margin: 0;
             padding: 0;
-            height: 100%;
-            overflow: hidden; /* Prevent double scrollbars */
+            background-color: #f0f0f0; /* Light gray background to see the survey boundaries */
+            min-height: 100vh;
+            display: flex;
+            justify-content: center; /* Horizontally center */
+            align-items: center;     /* Vertically center */
+            overflow: auto;          /* Allow scrolling if screen is smaller than 824x998 */
         }
         
+        /* 2. Container Styling: This sets your fixed dimensions */
         #survey-container {
-            width: 100%;
-            height: 100vh; /* Full viewport height */
+            width: 824px;   /* <--- Fixed Width */
+            height: 998px;  /* <--- Fixed Height */
+            background-color: white;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Optional: Adds a shadow for looks */
         }
     </style>
 </head>
